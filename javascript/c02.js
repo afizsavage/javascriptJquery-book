@@ -8,7 +8,7 @@ var welcome = greetings + customerName + message;
 
 //create variables to hold details about the sign
 var sign = 'Montague House';
-var shipping = 77;
+var shipping = 7;
 var tiles = sign.length;
 var subTotal = tiles * 5;
 
@@ -17,7 +17,7 @@ function calcSubTotal(subTotal) {
   return '$' + subTotal;
 }
 //get the element that has an id of greetings
-var el = document.getElementById('greetings');
+var el = document.getElementById('greeting');
 //replace the content of that message with the personalised welcome message
 el.textContent = welcome;
 
