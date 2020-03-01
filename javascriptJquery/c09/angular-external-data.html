@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html ng-app lang="en">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
+    <meta http-equiv="author" content="Afiz Savage" />
+    <title>JavaScript &amp; jQuery - Chapter 9: APIs - Angular External Data</title>
+    <!--<script src="js/angular.js"></script>"version": "1.7.9" ERROR-->
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.0.2/angular.min.js"></script>
+    <script src="js/angular-external-data.js"></script>
+    <link rel="stylesheet" href="css/c09.css" />
+</head>
+
+<body>
+    <header>
+        <h1>THE MAKER BUS</h1>
+    </header>
+    <h2>Session Times</h2>
+    <div class="third">
+        <img src="img/toys1.jpg" alt="Circuit boards" />
+    </div>
+    <div id="timetable" class="two-thirds">
+        <table ng-controller="TimetableCtrl">
+            <tr>
+                <th>time</th>
+                <th>title</th>
+                <th>detail</th>
+            </tr>
+            <tr ng-repeat="session in sessions">
+                <td>{{ session.time }}</td>
+                <td>{{ session.title }}</td>
+                <td>{{ session.detail }}</td>
+            </tr>
+        </table>
+    </div>
+</body>
+
+</html>
