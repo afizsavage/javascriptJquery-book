@@ -1,0 +1,15 @@
+{
+  "name": "javascript-and-jquery-book-examples",
+  "version": "1.0.0",
+  "description": "javascript-and-jquery-book-examples",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server",
+    "dev": "nodemon"
+  },
+  "author": "Afiz Savage",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
